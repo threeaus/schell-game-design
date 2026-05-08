@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
   <title id="title">Schell Game Design workflow</title>
   <desc id="desc">A five-stage workflow diagram for early game design planning: experience lens, four elements audit, core loop stress test, player motivation map, and honest assessment.</desc>
   <defs>
-    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#fffaf1"/>
       <stop offset="1" stop-color="#f3f7f4"/>
     </linearGradient>
@@ -10,74 +10,89 @@
       <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1f2937" flood-opacity="0.12"/>
     </filter>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
-      <path d="M2,2 L10,6 L2,10 Z" fill="#596579"/>
+      <path d="M2,2 L10,6 L2,10 Z" fill="#5b6678"/>
     </marker>
+    <style>
+      .font { font-family: Inter, Arial, sans-serif; }
+      .title { font-size: 36px; font-weight: 800; fill: #1f2937; }
+      .subtitle { font-size: 17px; fill: #596579; }
+      .card-title { font-size: 21px; font-weight: 800; fill: #253041; }
+      .card-subtitle { font-size: 15px; fill: #596579; }
+      .body { font-size: 15px; fill: #344054; }
+      .caption { font-size: 14px; fill: #6b7280; }
+    </style>
   </defs>
 
-  <rect width="1200" height="520" rx="30" fill="url(#paper)"/>
-  <rect x="34" y="34" width="1132" height="452" rx="26" fill="#ffffff" opacity="0.72"/>
+  <rect width="1200" height="560" rx="30" fill="url(#bg)"/>
+  <rect x="34" y="34" width="1132" height="492" rx="26" fill="#ffffff" opacity="0.76"/>
 
-  <text x="70" y="88" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#1f2937">Schell Game Design</text>
-  <text x="70" y="122" font-family="Inter, Arial, sans-serif" font-size="18" fill="#5b6472">Pressure-test the game idea before writing code</text>
-  <text x="70" y="154" font-family="Inter, Arial, sans-serif" font-size="18" fill="#5b6472">先确认体验，再检查玩法、故事、美学、技术与动机是否互相支持</text>
+  <g class="font">
+    <text x="70" y="88" class="title">Schell Game Design</text>
+    <text x="70" y="122" class="subtitle">Pressure-test the game idea before writing code.</text>
+    <text x="70" y="150" class="subtitle">先确认玩家体验，再检查玩法、故事、美学、技术与动机是否互相支持。</text>
 
-  <g font-family="Inter, Arial, sans-serif">
-    <g filter="url(#shadow)">
-      <rect x="70" y="220" width="186" height="154" rx="18" fill="#fff4dd" stroke="#f0c36a"/>
-      <circle cx="100" cy="250" r="18" fill="#eab74e"/>
-      <text x="100" y="257" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">1</text>
-      <text x="126" y="250" font-size="20" font-weight="800" fill="#253041">体验视角</text>
-      <text x="126" y="278" font-size="15" fill="#596579">Experience lens</text>
-      <text x="94" y="322" font-size="15" fill="#344054">玩家应该感到什么？</text>
-      <text x="94" y="348" font-size="14" fill="#6b7280">tension / discovery / mastery</text>
-    </g>
-
-    <line x1="268" y1="297" x2="328" y2="297" stroke="#596579" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="255" y1="300" x2="308" y2="300" stroke="#5b6678" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="470" y1="300" x2="523" y2="300" stroke="#5b6678" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="685" y1="300" x2="738" y2="300" stroke="#5b6678" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="900" y1="300" x2="953" y2="300" stroke="#5b6678" stroke-width="3" marker-end="url(#arrow)"/>
 
     <g filter="url(#shadow)">
-      <rect x="340" y="220" width="186" height="154" rx="18" fill="#eaf6f0" stroke="#78b891"/>
-      <circle cx="370" cy="250" r="18" fill="#4d9a68"/>
-      <text x="370" y="257" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">2</text>
-      <text x="396" y="250" font-size="20" font-weight="800" fill="#253041">四要素审计</text>
-      <text x="396" y="278" font-size="15" fill="#596579">Four elements</text>
-      <text x="364" y="322" font-size="15" fill="#344054">机制 / 故事 / 美学 / 技术</text>
-      <text x="364" y="348" font-size="14" fill="#6b7280">Do they reinforce each other?</text>
+      <rect x="70" y="220" width="185" height="170" rx="18" fill="#fff4dd" stroke="#f0c36a"/>
+      <circle cx="101" cy="252" r="18" fill="#eab74e"/>
+      <text x="101" y="259" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">1</text>
+      <text x="127" y="252" class="card-title">体验视角</text>
+      <text x="127" y="280" class="card-subtitle">Experience lens</text>
+      <text x="94" y="326" class="body">玩家应该感到什么？</text>
+      <text x="94" y="354" class="caption">tension / discovery</text>
+      <text x="94" y="376" class="caption">mastery / surprise</text>
     </g>
-
-    <line x1="538" y1="297" x2="598" y2="297" stroke="#596579" stroke-width="3" marker-end="url(#arrow)"/>
 
     <g filter="url(#shadow)">
-      <rect x="610" y="220" width="186" height="154" rx="18" fill="#eaf0ff" stroke="#8aa7e6"/>
-      <circle cx="640" cy="250" r="18" fill="#5f7fca"/>
-      <text x="640" y="257" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">3</text>
-      <text x="666" y="250" font-size="20" font-weight="800" fill="#253041">核心回路</text>
-      <text x="666" y="278" font-size="15" fill="#596579">Core loop test</text>
-      <text x="634" y="322" font-size="15" fill="#344054">重复最多的动作好玩吗？</text>
-      <text x="634" y="348" font-size="14" fill="#6b7280">First 30 seconds matter</text>
+      <rect x="285" y="220" width="185" height="170" rx="18" fill="#eaf6f0" stroke="#78b891"/>
+      <circle cx="316" cy="252" r="18" fill="#4d9a68"/>
+      <text x="316" y="259" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">2</text>
+      <text x="342" y="252" class="card-title">四要素审计</text>
+      <text x="342" y="280" class="card-subtitle">Four elements</text>
+      <text x="309" y="326" class="body">机制 / 故事</text>
+      <text x="309" y="352" class="body">美学 / 技术</text>
+      <text x="309" y="376" class="caption">Do they work together?</text>
     </g>
-
-    <line x1="808" y1="297" x2="868" y2="297" stroke="#596579" stroke-width="3" marker-end="url(#arrow)"/>
 
     <g filter="url(#shadow)">
-      <rect x="880" y="220" width="186" height="154" rx="18" fill="#f8edff" stroke="#b79bd7"/>
-      <circle cx="910" cy="250" r="18" fill="#8c6bb1"/>
-      <text x="910" y="257" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">4</text>
-      <text x="936" y="250" font-size="20" font-weight="800" fill="#253041">玩家动机</text>
-      <text x="936" y="278" font-size="15" fill="#596579">Motivation map</text>
-      <text x="904" y="322" font-size="15" fill="#344054">乐趣本身是否成立？</text>
-      <text x="904" y="348" font-size="14" fill="#6b7280">intrinsic over rewards</text>
+      <rect x="500" y="220" width="185" height="170" rx="18" fill="#eaf0ff" stroke="#8aa7e6"/>
+      <circle cx="531" cy="252" r="18" fill="#5f7fca"/>
+      <text x="531" y="259" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">3</text>
+      <text x="557" y="252" class="card-title">核心回路</text>
+      <text x="557" y="280" class="card-subtitle">Core loop test</text>
+      <text x="524" y="326" class="body">重复最多的动作</text>
+      <text x="524" y="352" class="body">本身好玩吗？</text>
+      <text x="524" y="376" class="caption">First 30 seconds matter</text>
     </g>
-
-    <path d="M973 386 C973 435 714 446 714 392" fill="none" stroke="#596579" stroke-width="3" stroke-dasharray="7 8" marker-end="url(#arrow)"/>
-    <text x="748" y="454" font-size="15" font-weight="700" fill="#596579">test, improve, playtest</text>
 
     <g filter="url(#shadow)">
-      <rect x="476" y="58" width="626" height="112" rx="18" fill="#fff2f2" stroke="#dc8a8a"/>
-      <circle cx="510" cy="91" r="18" fill="#c65f5f"/>
-      <text x="510" y="98" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">5</text>
-      <text x="540" y="92" font-size="21" font-weight="800" fill="#253041">诚实评估 / Honest assessment</text>
-      <text x="540" y="124" font-size="15" fill="#596579">Protect what works. Name the risks. Find what is missing.</text>
-      <text x="540" y="148" font-size="15" fill="#596579">最后给出：有效部分、风险、缺失内容、开发前最重要的三步。</text>
+      <rect x="715" y="220" width="185" height="170" rx="18" fill="#f8edff" stroke="#b79bd7"/>
+      <circle cx="746" cy="252" r="18" fill="#8c6bb1"/>
+      <text x="746" y="259" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">4</text>
+      <text x="772" y="252" class="card-title">玩家动机</text>
+      <text x="772" y="280" class="card-subtitle">Motivation map</text>
+      <text x="739" y="326" class="body">没有奖励时</text>
+      <text x="739" y="352" class="body">还想玩吗？</text>
+      <text x="739" y="376" class="caption">intrinsic over rewards</text>
     </g>
+
+    <g filter="url(#shadow)">
+      <rect x="930" y="220" width="200" height="170" rx="18" fill="#fff2f2" stroke="#dc8a8a"/>
+      <circle cx="961" cy="252" r="18" fill="#c65f5f"/>
+      <text x="961" y="259" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">5</text>
+      <text x="987" y="252" class="card-title">诚实评估</text>
+      <text x="987" y="280" class="card-subtitle">Honest assessment</text>
+      <text x="954" y="326" class="body">保护有效部分</text>
+      <text x="954" y="352" class="body">说清风险与缺失</text>
+      <text x="954" y="376" class="caption">then choose next 3 steps</text>
+    </g>
+
+    <path d="M1030 414 C880 488 330 488 170 414" fill="none" stroke="#5b6678" stroke-width="3" stroke-dasharray="8 9" marker-end="url(#arrow)"/>
+    <text x="485" y="480" font-size="17" font-weight="800" fill="#5b6678">test, improve, playtest</text>
+    <text x="455" y="508" font-size="15" fill="#6b7280">设计文档不是游戏，试玩才会暴露真相。</text>
   </g>
 </svg>
