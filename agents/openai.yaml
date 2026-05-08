@@ -1,0 +1,4 @@
+interface:
+  display_name: "谢尔游戏设计顾问"
+  short_description: "用谢尔方法梳理游戏创意"
+  default_prompt: "Use $schell-game-design to pressure-test my game idea before development."
