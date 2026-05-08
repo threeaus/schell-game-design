@@ -1,5 +1,9 @@
 # Schell Game Design / 谢尔游戏设计顾问
 
+<p align="center">
+  <img src="assets/schell-flow.svg" alt="Schell Game Design workflow" width="100%">
+</p>
+
 ## 中文说明
 
 这是一个用于游戏开发前期策划的 Codex Skill。它基于 Jesse Schell《游戏设计艺术》中的思考框架，帮助用户在开始写代码之前，先把游戏创意压实。
@@ -46,6 +50,7 @@ This Skill does not build the game or write production code. Its purpose is to h
 
 - `SKILL.md`: the Skill instructions.
 - `agents/openai.yaml`: interface metadata for Codex.
+- `assets/schell-flow.svg`: a hand-authored workflow diagram used by this README.
 
 ## Repository
 
